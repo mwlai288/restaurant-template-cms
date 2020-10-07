@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "project": {
+    "name": "restaurant-takeout"
+  },
+  "api": {
+    "projectId": "76fy21hg",
+    "dataset": "takeout-menu"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
